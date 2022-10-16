@@ -11,7 +11,7 @@ export default {
       <TextInput.Icon>
         <Envelope />
       </TextInput.Icon>,
-      <TextInput.Input placeholder='Type your e-amil address' />,
+      <TextInput.Input placeholder='Type your e-mail address' />,
     ],
   },
   argTypes: {
