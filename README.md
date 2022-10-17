@@ -1,6 +1,6 @@
 Repositório criado no evento Ignite Lab sobre Design System
 
-## configuração
+## Configuração
 
 clonar esse repositório e entrar na pasta criada
 
