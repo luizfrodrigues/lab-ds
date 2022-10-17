@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import { within, userEvent, waitFor } from '@storybook/testing-library';
 import { expect } from '@storybook/jest';
 import { rest } from 'msw';
-import { SignIn } from './SigIn';
+import { SignIn } from './SignIn';
 
 export default {
   title: 'Pages/Sign in',
@@ -11,7 +11,7 @@ export default {
   argTypes: {},
   parameters: {
     msw: {
-      handles: [
+      handlers: [
         rest.post('/sessions', (req, res, ctx) => {
           return res(
             ctx.json({
@@ -29,7 +29,7 @@ export const Default: StoryObj = {
     const canvas = within(canvasElement);
 
     userEvent.type(
-      canvas.getByPlaceholderText('Digite o seu e-mail'),
+      canvas.getByPlaceholderText('Digite seu e-mail'),
       'lf@gmail.com'
     );
     userEvent.type(canvas.getByPlaceholderText('**********'), '1234567890');
