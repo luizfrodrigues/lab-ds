@@ -12,6 +12,7 @@ module.exports = {
   },
   features: {
     storyStoreV7: true,
+    interactionDebugger: true,
   },
   viteFinal: (config, { configType }) => {
     if (configType === 'PRODUCTION') {
